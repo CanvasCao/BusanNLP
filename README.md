@@ -97,4 +97,10 @@ dict.txt的解释：
 
 ### 6、打印relationships ###
 	print json.dumps(relationships, ensure_ascii=False, encoding='UTF-8')
+
+
+
+## 2、Gephi ##
+### 1、下载Gephi ###
+[http://www.121down.com/soft/softview-72193.html](http://www.121down.com/soft/softview-72193.html)
 ![](resource/Untitled.png)
