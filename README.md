@@ -101,6 +101,14 @@ dict.txt的解释：
 
 
 ## 2、Gephi ##
-### 1、下载Gephi ###
+### 1、安装Gephi ###
 [http://www.121down.com/soft/softview-72193.html](http://www.121down.com/soft/softview-72193.html)
+
+### 2、安装JDK ###
+Gephi是基于java运行的
+[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+
+
+
 ![](resource/Untitled.png)
