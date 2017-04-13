@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 400px;
+        }
+
+        button {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<textarea id='ta1'>
+     {
+        "美少女": {"珍熙": 1},
+        "尚华": {
+            "游弋": 1,
+            "塞进": 1,
+            "爱抚": 4,
+            "珍熙": 1,
+            "秀安": 12,
+            "英国": 16,
+            "卡住": 4,
+            "呼唤": 1,
+            "明白": 2,
+            "石宇": 61,
+            "露宿者": 4,
+            "盛京": 45
+        },
+        "幸存者": {"列车长": 1},
+        "安抚": {"秀安": 1, "石宇": 2},
+        "钟吉冲": {"珍熙": 1, "钟吉": 1},
+        "塞进": {"尚华": 1},
+        "列车长": {"英国": 1, "金常务": 9, "珍熙": 1, "幸存者": 1},
+        "钟吉": {"石宇": 2, "金常务": 1, "珍熙": 3, "钟吉冲": 1},
+        "阿姨": {"秀安": 2, "石宇": 1},
+        "石宇": {
+            "游弋": 1,
+            "尚华": 61,
+            "金常务": 13,
+            "安抚": 2,
+            "钟吉": 2,
+            "拉进来": 2,
+            "秀安": 81,
+            "英国": 27,
+            "呼唤": 1,
+            "卡住": 5,
+            "苏醒过来": 1,
+            "组长": 6,
+            "明白": 3,
+            "麻麻亮": 1,
+            "金代理": 8,
+            "海英": 6,
+            "阿姨": 1,
+            "石宇的妈妈": 5,
+            "珍熙": 4,
+            "露宿者": 10,
+            "盛京": 33
+        },
+        "游弋": {"尚华": 1, "秀安": 2, "石宇": 1, "露宿者": 3, "盛京": 3},
+        "拉进来": {"英国": 1, "金常务": 1, "石宇": 2, "秀安": 2, "盛京": 1},
+        "卡住": {"尚华": 4, "珍熙": 1, "英国": 2, "呼唤": 1, "石宇": 5, "露宿者": 1, "盛京": 1},
+        "组长": {"秀安": 2, "石宇": 6, "金代理": 3, "海英": 13, "小姐": 2},
+        "石宇的妈妈": {"和娜英": 2, "秀安": 8, "石宇": 5},
+        "珍熙": {
+            "美少女": 1,
+            "尚华": 1,
+            "金常务": 6,
+            "钟吉": 3,
+            "谢谢": 1,
+            "英国": 29,
+            "钟吉冲": 1,
+            "卡住": 1,
+            "呼唤": 1,
+            "列车长": 1,
+            "海英": 1,
+            "麻木": 2,
+            "石宇": 4,
+            "露宿者": 1
+        },
+        "露宿者": {"游弋": 3, "尚华": 4, "金常务": 4, "珍熙": 1, "秀安": 15, "英国": 2, "卡住": 1, "苏醒过来": 1, "呼唤": 1, "石宇": 10, "盛京": 9},
+        "小姐": {"组长": 2, "海英": 4},
+        "金常务": {"钟吉": 1, "拉进来": 1, "石宇": 13, "秀安": 7, "英国": 8, "明白": 1, "冷笑": 1, "盛京": 7, "珍熙": 6, "露宿者": 4, "列车长": 9},
+        "谢谢": {"珍熙": 1, "盛京": 1},
+        "秀安": {
+            "游弋": 2,
+            "尚华": 12,
+            "金常务": 7,
+            "安抚": 1,
+            "拉进来": 2,
+            "英国": 3,
+            "苏醒过来": 1,
+            "组长": 2,
+            "麻麻亮": 1,
+            "阿姨": 2,
+            "和娜英": 2,
+            "石宇的妈妈": 8,
+            "石宇": 81,
+            "露宿者": 15,
+            "盛京": 21
+        },
+        "苏醒过来": {"秀安": 1, "石宇": 1, "露宿者": 1, "盛京": 1},
+        "呼唤": {"尚华": 1, "珍熙": 1, "英国": 1, "卡住": 1, "海英": 1, "石宇": 1, "露宿者": 1},
+        "明白": {"石宇": 3, "尚华": 2, "金常务": 1, "英国": 1},
+        "海英": {"石宇": 6, "英国": 1, "组长": 13, "呼唤": 1, "珍熙": 1, "小姐": 4},
+        "和娜英": {"石宇的妈妈": 2, "秀安": 2},
+        "麻木": {"珍熙": 2},
+        "英国": {
+            "尚华": 16,
+            "金常务": 8,
+            "拉进来": 1,
+            "珍熙": 29,
+            "秀安": 3,
+            "卡住": 2,
+            "呼唤": 1,
+            "明白": 1,
+            "海英": 1,
+            "盛京": 1,
+            "石宇": 27,
+            "露宿者": 2,
+            "列车长": 1
+        },
+        "爱抚": {"尚华": 4, "盛京": 5},
+        "麻麻亮": {"秀安": 1, "石宇": 1},
+        "金代理": {"组长": 3, "石宇": 8, "安全性": 1},
+        "冷笑": {"金常务": 1},
+        "乌云": {"蓝天": 1},
+        "蓝天": {"乌云": 1},
+        "安全性": {"金代理": 1},
+        "盛京": {
+            "游弋": 3,
+            "尚华": 45,
+            "爱抚": 5,
+            "拉进来": 1,
+            "谢谢": 1,
+            "秀安": 21,
+            "英国": 1,
+            "卡住": 1,
+            "苏醒过来": 1,
+            "金常务": 7,
+            "石宇": 33,
+            "露宿者": 9
+        }
+    }
+</textarea>
+<textarea id='ta2'></textarea>
+<button id='btn'>转换</button>
+<script src="underscore.min.js"></script>
+<script>
+
+    onload = function () {
+        var btn = document.getElementById('btn');
+        var ta1 = document.getElementById('ta1');
+        var ta2 = document.getElementById('ta2');
+        btn.onclick = function () {
+//        console.log(JSON.parse(ta1.innerHTML))
+            var json = JSON.parse(ta1.innerHTML);
+            var nameArray = [];
+
+            for (var k in json) {
+                nameArray.push(k);
+            }
+            var arrayLength = nameArray.length;
+
+            //创建arrayLength*arrayLength的二维矩阵...
+            var finalArray = [];
+            for (var i = 1; i <= arrayLength; i++) {
+                var subArray = [];
+                for (var j = 1; j <= arrayLength; j++) {
+                    subArray.push(0);
+                }
+
+                finalArray.push(subArray);
+            }
+
+//            console.log(JSON.stringify(finalArray))
+
+            //finalArray push数据
+            for (var name1 in json) {
+                var name1Json = json[name1];
+                var name1Index = _.indexOf(nameArray, name1);
+
+                for (var name2 in name1Json) {
+                    var value = name1Json[name2]
+                    var name2Index = _.indexOf(nameArray, name2);
+                    finalArray[name1Index][name2Index] = value
+                }
+            }
+
+            //每一行数组之前加名字...
+            for (var i = 0; i < finalArray.length; i++) {
+                finalArray[i].unshift(nameArray[i])
+            }
+
+
+            //数组之前追加名字...
+            finalArray.unshift(nameArray)
+            console.log(JSON.stringify(finalArray));
+
+
+            //生成csv...
+            var str = '';
+            for (var i = 0; i < finalArray.length; i++) {
+                var subArray = finalArray[i];
+                for (var j = 0; j < subArray.length; j++) {
+//                    console.log(finalArray[i][j]);
+                    var value = (finalArray[i][j])
+
+
+                    if (i > 0 && j == 0) {
+                        str += value;
+                    } else {
+                        str += ';' + value;
+                    }
+                }
+                str += '\r\n';
+            }
+            ta2.innerHTML = str;
+        }
+    }
+
+
+</script>
+</body>
+</html>

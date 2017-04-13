@@ -95,9 +95,10 @@ dict.txt的解释：
 	            else:
 	                relationships[name1][name2] = relationships[name1][name2] + 1
 
-### 6、打印relationships ###
+### 6、打印relationships 得到人物关系###
 	print json.dumps(relationships, ensure_ascii=False, encoding='UTF-8')
-
+![](demoImg/json.png)
+  
 
 
 ## 2、Gephi ##
@@ -105,10 +106,14 @@ dict.txt的解释：
 [http://www.121down.com/soft/softview-72193.html](http://www.121down.com/soft/softview-72193.html)
 
 ### 2、安装JDK ###
-Gephi是基于java运行的
+Gephi是基于java运行的  
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
+### 3、根据在anlayze文件计算出的relationships，在jsonToCsvConverter.html中生成Gephi导入的csv所需要的矩阵信息（矩阵大小：剧本角色数量*剧本角色数量）
+![](demoImg/juzhen.png)
 
+把生成的矩阵复制到记事本中，保存成csv文件
 
+### 4、在Gephi中打开csv 预览得到最后的结果 ###
+![](demoImg/result.png)
 
-![](resource/Untitled.png)
